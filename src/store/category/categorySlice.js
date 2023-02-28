@@ -32,7 +32,7 @@ const categorySlice = createSlice({
       })
       .addCase(categoryRequestAsync.rejected, (state, action) => {
         state.error = action.payload.error
-      })
+      });
   }
 });
 
